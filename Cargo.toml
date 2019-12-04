@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = ["qiwi", "qiwi-cli"]
+
+[workspace.package]
+repository = "https://github.com/vorot93/qiwi"
+authors = ["Artem Vorotnikov <artem@vorotnikov.me>"]
+license = "MPL-2.0"
+edition = "2021"

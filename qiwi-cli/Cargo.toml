@@ -1,0 +1,24 @@
+[package]
+name = "qiwi-cli"
+version = "0.1.0"
+description = "Qiwi command line tools"
+categories = ["cli"]
+repository.workspace = true
+authors.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+async-trait = "0.1"
+chrono = { version = "0.4", features = ["serde"] }
+clap = { version = "4", features = ["derive"] }
+phonenumber = "0.3"
+qiwi = { version = "0.1", path = "../qiwi" }
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1"
+tokio-util = "0.7"
+toml = "0.7"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+url = "2"
+xdg = "2"
